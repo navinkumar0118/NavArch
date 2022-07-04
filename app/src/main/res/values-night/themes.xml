@@ -1,0 +1,19 @@
+<!--we are not using dark theme -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.NavArch" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_primary</item>
+        <item name="colorSecondaryVariant">@color/color_primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <!--<item name="actionBarStyle">@style/Theme.Sportsal.ActionBar</item>-->
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+    </style>
+
+</resources>
