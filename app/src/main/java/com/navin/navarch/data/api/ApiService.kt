@@ -2,19 +2,26 @@ package com.navin.navarch.data.api
 
 import android.content.Context
 import com.navin.navarch.base.PrivateSharedPrefManager
+import com.navin.navarch.common.Constants.Companion.BASE_URL
+import com.navin.navarch.data.api.model.GetPokemonListResponse
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.GET
+import retrofit2.http.Path
 
 
 interface ApiService {
+
+    @GET("pokemon")
+    suspend fun getPokemonList(): Response<GetPokemonListResponse>
 
 
     /** ------------------------------------------------------------------------------------- */
 
     companion object {
-        private const val BASE_URL = "https://sportsal.com/app/api/v1/"
 
         fun create(context : Context): ApiService {
 

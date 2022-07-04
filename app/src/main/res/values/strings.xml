@@ -6,33 +6,11 @@
 
 
     <!--Titles-->
-    <string name="title_create_team_page">Create Your Team</string>
-    <string name="title_create_match_page">Create Match</string>
-    <string name="title_team_details_page">Team Details</string>
-    <string name="title_my_ball_page">My Scanned Balls</string>
-
-    <string name="title_rounds_page">Rounds</string>
-    <string name="title_add_rounds_page">Add Rounds</string>
-    <string name="title_groups_page">Groups</string>
-    <string name="title_create_group_page">Create Group</string>
-
-    <!--bottom navigation-->
-    <string name="home_text">Home</string>
-    <string name="tournaments_text">Tournaments</string>
-    <string name="my_teams_text">Team</string>
-    <string name="matches_text">Matches</string>
-    <string name="profile_text">Profile</string>
+    <string name="home_page_title">Home Page</string>
+    <string name="home_page_sub_title">pokemon</string>
 
 
-    <!--common-->
-
-    <string name="menu_search_text">Search</string>
-    <string name="menu_edit_text">Edit</string>
-    <string name="menu_notification_text">Notification</string>
-    <string name="menu_scan_qr_text">QR scan</string>
-    <string name="navigation_drawer_open">open</string>
-    <string name="navigation_drawer_close">close</string>
-
+    <string name="no_pokemon_found">Oops there is no Pokemon</string>
 
 
 

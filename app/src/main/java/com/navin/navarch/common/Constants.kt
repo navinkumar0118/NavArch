@@ -24,7 +24,8 @@ class Constants {
         const val SERVICE_OK_STATUS = "ok"
         const val SERVICE_ERROR_STATUS = "error"
 
-        const val BASE_URL = "https://apps.t10.me/bhandhan/api/v1/"
+        const val BASE_URL = "https://pokeapi.co/api/v2/"
+
 
         const val DATABASE_NAME = "navArchDB"
 

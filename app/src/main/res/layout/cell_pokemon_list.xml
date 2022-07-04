@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="view"
+            type="android.view.View" />
+
+        <variable
+            name="pokemon"
+            type="com.navin.navarch.data.model.Pokemon" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/dp_4"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/default_padding"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/deleteIcon"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginVertical="@dimen/dp_5"
+                android:layout_gravity="center"
+                android:src="@drawable/pokeball"/>
+
+            <Space
+                android:layout_width="@dimen/default_space_16dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/team_name"
+                style="@style/SubTitleTextSemiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{pokemon.pokemonName}"
+                android:textAlignment="textStart" />
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
+

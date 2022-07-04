@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.navin.navarch">
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:name=".base.MainApplication"
@@ -15,7 +17,10 @@
         android:theme="@style/Theme.NavArch"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.launcher.LauncherActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -1,25 +1,16 @@
 package com.navin.navarch.data.repository.home
 import com.navin.navarch.data.api.ApiService
 import com.navin.navarch.data.api.BaseRemoteDataSource
+import com.navin.navarch.data.api.model.GetPokemonListResponse
 import javax.inject.Inject
 import javax.inject.Singleton
+import com.navin.navarch.data.Result
+
 
 @Singleton
 class HomeRepository @Inject constructor(private val service: ApiService) : BaseRemoteDataSource() {
-//    suspend fun callLogin() : Result<BaseResponse> {
-//        return getResult { service.test() }
-//    }
-//
-//    suspend fun updateFCM(request: UpdateFCMRequest) : Result<BaseResponse> {
-//        return getResult { service.updateFCM(request) }
-//    }
-//
-//    /** notification */
-//    suspend fun getAllNotificationsData(): Result<NotificationResponse> {
-//        return getResult { service.getAllNotifications() }
-//    }
-//
-//    suspend fun getHomeData(): Result<HomeResponse> {
-//        return getResult { service.getHomeData() }
-//    }
+
+    suspend fun getPokemonDataFromService(): Result<GetPokemonListResponse> {
+        return getResult { service.getPokemonList() }
+    }
 }
