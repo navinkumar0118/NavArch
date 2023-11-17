@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
-import com.cricketronics.sportsal.ui.view.setDefaultWindowTheme
 import com.navin.navarch.R
 import com.navin.navarch.databinding.DialogLoadingBinding
 

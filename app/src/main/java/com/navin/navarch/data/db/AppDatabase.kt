@@ -7,7 +7,6 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.cricketronics.sportsal.data.db.Converters
 import com.navin.navarch.common.Constants.Companion.DATABASE_NAME
 
 /**

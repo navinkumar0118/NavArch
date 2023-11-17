@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cricketronics.sportsal.data.db
+package com.navin.navarch.data.db
 
 import androidx.room.TypeConverter
 import java.util.Calendar

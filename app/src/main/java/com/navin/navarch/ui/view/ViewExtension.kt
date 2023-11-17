@@ -1,4 +1,4 @@
-package com.cricketronics.sportsal.ui.view
+package com.navin.navarch.ui.view
 
 import android.app.Dialog
 import android.graphics.Color
